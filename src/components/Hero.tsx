@@ -19,53 +19,58 @@ export default function Hero() {
       </div>
 
       <div className="container mx-auto relative z-10">
-        <div className="max-w-3xl">
-          {/* Logo */}
-          <img 
-            src="/logo.png" 
-            alt="Logo Hidráulica São Paulo" 
-            className="h-24 md:h-32 w-auto mb-6 animate-fade-in"
-          />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Column - Content */}
+          <div className="max-w-xl">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-full px-4 py-2 mb-6 animate-fade-in">
+              <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
+              <span className="text-sm text-primary-foreground/90">Desde 2019 no mercado</span>
+            </div>
 
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-full px-4 py-2 mb-6 animate-fade-in">
-            <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-            <span className="text-sm text-primary-foreground/90">Desde 2019 no mercado</span>
+            {/* H1 - Nome da empresa */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 font-heading animate-fade-in" style={{ animationDelay: '0.1s' }}>
+              Hidráulica São Paulo
+            </h1>
+
+            {/* H2 - Descrição */}
+            <h2 className="text-xl md:text-2xl text-primary-foreground/90 mb-8 leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              Sua fonte confiável para produtos e materiais hidráulicos. Distribuidora atacadista especializada em soluções completas para construção civil e infraestrutura.
+            </h2>
+
+            {/* Benefits */}
+            <div className="flex flex-wrap gap-4 mb-10 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+              {benefits.map((benefit) => (
+                <div key={benefit} className="flex items-center gap-2 text-primary-foreground/90">
+                  <CheckCircle className="h-5 w-5 text-accent" />
+                  <span className="text-sm font-medium">{benefit}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+              <Button asChild size="lg" variant="secondary" className="text-primary font-semibold">
+                <a href="https://wa.me/551143241179" target="_blank" rel="noopener noreferrer">
+                  Solicitar orçamento
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
+                <a href="#produtos">
+                  Nossos produtos
+                </a>
+              </Button>
+            </div>
           </div>
 
-          {/* H1 - Nome da empresa */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 font-heading animate-fade-in" style={{ animationDelay: '0.1s' }}>
-            Hidráulica São Paulo
-          </h1>
-
-          {/* H2 - Descrição */}
-          <h2 className="text-xl md:text-2xl text-primary-foreground/90 mb-8 leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            Sua fonte confiável para produtos e materiais hidráulicos. Distribuidora atacadista especializada em soluções completas para construção civil e infraestrutura.
-          </h2>
-
-          {/* Benefits */}
-          <div className="flex flex-wrap gap-4 mb-10 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            {benefits.map((benefit) => (
-              <div key={benefit} className="flex items-center gap-2 text-primary-foreground/90">
-                <CheckCircle className="h-5 w-5 text-accent" />
-                <span className="text-sm font-medium">{benefit}</span>
-              </div>
-            ))}
-          </div>
-
-          {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <Button asChild size="lg" variant="secondary" className="text-primary font-semibold">
-              <a href="https://wa.me/551143241179" target="_blank" rel="noopener noreferrer">
-                Solicitar orçamento
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
-              <a href="#produtos">
-                Nossos produtos
-              </a>
-            </Button>
+          {/* Right Column - Logo */}
+          <div className="hidden lg:flex justify-center items-center animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            <img 
+              src="/logo.png" 
+              alt="Logo Hidráulica São Paulo" 
+              className="w-full max-w-md h-auto drop-shadow-2xl"
+            />
           </div>
         </div>
       </div>
