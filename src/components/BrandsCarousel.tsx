@@ -49,7 +49,7 @@ export default function BrandsCarousel() {
               <img 
                 src={slide.src} 
                 alt={slide.alt}
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover max-h-[50vh] sm:max-h-[60vh] md:max-h-[70vh] lg:max-h-none"
               />
             </div>
           ))}
@@ -58,17 +58,17 @@ export default function BrandsCarousel() {
         {/* Navigation Arrows */}
         <button 
           onClick={prevSlide}
-          className="absolute left-4 top-1/2 -translate-y-1/2 bg-card/80 hover:bg-card p-2 rounded-full shadow-lg transition-colors"
+          className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-card/80 hover:bg-card p-1.5 sm:p-2 rounded-full shadow-lg transition-colors"
           aria-label="Slide anterior"
         >
-          <ChevronLeft className="h-6 w-6 text-foreground" />
+          <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-foreground" />
         </button>
         <button 
           onClick={nextSlide}
-          className="absolute right-4 top-1/2 -translate-y-1/2 bg-card/80 hover:bg-card p-2 rounded-full shadow-lg transition-colors"
+          className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-card/80 hover:bg-card p-1.5 sm:p-2 rounded-full shadow-lg transition-colors"
           aria-label="Próximo slide"
         >
-          <ChevronRight className="h-6 w-6 text-foreground" />
+          <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-foreground" />
         </button>
       </div>
     </section>

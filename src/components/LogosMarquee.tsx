@@ -33,26 +33,26 @@ const rightLogos = [
 
 export default function LogosMarquee() {
   return (
-    <section className="py-12 bg-secondary overflow-hidden">
-      <div className="container mx-auto mb-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground font-heading">
+    <section className="py-8 sm:py-10 md:py-12 bg-secondary overflow-hidden">
+      <div className="container mx-auto px-4 mb-6 sm:mb-8">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-foreground font-heading">
           Nossas Marcas Parceiras
         </h2>
       </div>
 
       {/* Left scrolling row */}
-      <div className="relative mb-8">
+      <div className="relative mb-4 sm:mb-6 md:mb-8">
         <div className="flex animate-scroll-left">
           {/* First set */}
           {leftLogos.map((logo, index) => (
             <div 
               key={`left-1-${index}`} 
-              className="flex-shrink-0 mx-8 flex items-center justify-center"
+              className="flex-shrink-0 mx-3 sm:mx-5 md:mx-8 flex items-center justify-center"
             >
               <img 
                 src={logo.src} 
                 alt={logo.alt} 
-                className="h-16 md:h-20 w-auto object-contain bg-white p-3 rounded-lg shadow-sm"
+                className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain bg-white p-2 sm:p-3 rounded-lg shadow-sm"
               />
             </div>
           ))}
@@ -60,12 +60,12 @@ export default function LogosMarquee() {
           {leftLogos.map((logo, index) => (
             <div 
               key={`left-2-${index}`} 
-              className="flex-shrink-0 mx-8 flex items-center justify-center"
+              className="flex-shrink-0 mx-3 sm:mx-5 md:mx-8 flex items-center justify-center"
             >
               <img 
                 src={logo.src} 
                 alt={logo.alt} 
-                className="h-16 md:h-20 w-auto object-contain bg-white p-3 rounded-lg shadow-sm"
+                className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain bg-white p-2 sm:p-3 rounded-lg shadow-sm"
               />
             </div>
           ))}
@@ -79,12 +79,12 @@ export default function LogosMarquee() {
           {rightLogos.map((logo, index) => (
             <div 
               key={`right-1-${index}`} 
-              className="flex-shrink-0 mx-8 flex items-center justify-center"
+              className="flex-shrink-0 mx-3 sm:mx-5 md:mx-8 flex items-center justify-center"
             >
               <img 
                 src={logo.src} 
                 alt={logo.alt} 
-                className="h-16 md:h-20 w-auto object-contain bg-white p-3 rounded-lg shadow-sm"
+                className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain bg-white p-2 sm:p-3 rounded-lg shadow-sm"
               />
             </div>
           ))}
@@ -92,36 +92,36 @@ export default function LogosMarquee() {
           {rightLogos.map((logo, index) => (
             <div 
               key={`right-2-${index}`} 
-              className="flex-shrink-0 mx-8 flex items-center justify-center"
+              className="flex-shrink-0 mx-3 sm:mx-5 md:mx-8 flex items-center justify-center"
             >
               <img 
                 src={logo.src} 
                 alt={logo.alt} 
-                className="h-16 md:h-20 w-auto object-contain bg-white p-3 rounded-lg shadow-sm"
+                className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain bg-white p-2 sm:p-3 rounded-lg shadow-sm"
               />
             </div>
           ))}
           {rightLogos.map((logo, index) => (
             <div 
               key={`right-3-${index}`} 
-              className="flex-shrink-0 mx-8 flex items-center justify-center"
+              className="flex-shrink-0 mx-3 sm:mx-5 md:mx-8 flex items-center justify-center"
             >
               <img 
                 src={logo.src} 
                 alt={logo.alt} 
-                className="h-16 md:h-20 w-auto object-contain bg-white p-3 rounded-lg shadow-sm"
+                className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain bg-white p-2 sm:p-3 rounded-lg shadow-sm"
               />
             </div>
           ))}
           {rightLogos.map((logo, index) => (
             <div 
               key={`right-4-${index}`} 
-              className="flex-shrink-0 mx-8 flex items-center justify-center"
+              className="flex-shrink-0 mx-3 sm:mx-5 md:mx-8 flex items-center justify-center"
             >
               <img 
                 src={logo.src} 
                 alt={logo.alt} 
-                className="h-16 md:h-20 w-auto object-contain bg-white p-3 rounded-lg shadow-sm"
+                className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain bg-white p-2 sm:p-3 rounded-lg shadow-sm"
               />
             </div>
           ))}

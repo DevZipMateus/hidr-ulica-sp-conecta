@@ -57,12 +57,12 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-card shadow-sm">
-      <div className="container mx-auto">
-        <div className="flex items-center justify-between h-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 sm:h-18 md:h-20">
           {/* Logo */}
           <a 
             href="/" 
-            className="flex items-center gap-3" 
+            className="flex items-center gap-2 sm:gap-3" 
             onClick={(e) => {
               e.preventDefault();
               handleNavClick('/', true);
@@ -71,12 +71,12 @@ export default function Header() {
             <img 
               src="/logo-icon.png" 
               alt="Logo Hidráulica São Paulo - Materiais Hidráulicos" 
-              className="h-12 w-auto" 
+              className="h-10 sm:h-11 md:h-12 w-auto" 
             />
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-4 xl:gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -85,7 +85,7 @@ export default function Header() {
                   e.preventDefault();
                   handleNavClick(link.href, link.isRoute);
                 }}
-                className="text-sm font-medium text-foreground transition-colors hover:text-primary"
+                className="text-sm font-medium text-foreground transition-colors hover:text-primary whitespace-nowrap"
               >
                 {link.label}
               </a>
@@ -93,12 +93,12 @@ export default function Header() {
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:1143241179" className="flex items-center gap-2 text-sm font-medium text-primary">
-              <Phone className="h-4 w-4" />
+          <div className="hidden lg:flex items-center gap-2 xl:gap-4">
+            <a href="tel:1143241179" className="flex items-center gap-1.5 xl:gap-2 text-xs xl:text-sm font-medium text-primary whitespace-nowrap">
+              <Phone className="h-3.5 w-3.5 xl:h-4 xl:w-4" />
               (11) 4324-1179
             </a>
-            <Button asChild variant="default" size="sm">
+            <Button asChild variant="default" size="sm" className="text-xs xl:text-sm">
               <a href="https://wa.me/551143241179" target="_blank" rel="noopener noreferrer">
                 Solicitar orçamento
               </a>
