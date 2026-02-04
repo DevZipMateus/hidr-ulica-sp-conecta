@@ -8,6 +8,12 @@ const testimonials = [
     date: '9 de dez. de 2023',
   },
   {
+    name: 'Carlos Vinicius Nascimento',
+    text: 'Ótima experiência de compra, produtos de qualidade e entrega rápida.',
+    rating: 5,
+    date: '10 de jan. de 2022',
+  },
+  {
     name: 'Kátia Cilene',
     text: 'Atendimento rápido e pessoal atencioso. Agilidade e bom preço.',
     rating: 5,
@@ -22,6 +28,12 @@ const testimonials = [
   {
     name: 'Vanessa Goes Platero',
     text: 'Conhece os produtos e sabe oferecer o que é necessário para a obra, atende prontamente, tem qualidade nos produtos e cumpre o prazo de entrega.',
+    rating: 5,
+    date: '23 de nov. de 2019',
+  },
+  {
+    name: 'Marcelo de Lima',
+    text: 'Excelente atendimento e variedade de produtos. Recomendo!',
     rating: 5,
     date: '23 de nov. de 2019',
   },
