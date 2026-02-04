@@ -20,6 +20,13 @@ export default function Hero() {
 
       <div className="container mx-auto relative z-10">
         <div className="max-w-3xl">
+          {/* Logo */}
+          <img 
+            src="/logo.png" 
+            alt="Logo Hidráulica São Paulo" 
+            className="h-24 md:h-32 w-auto mb-6 animate-fade-in"
+          />
+
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-full px-4 py-2 mb-6 animate-fade-in">
             <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
