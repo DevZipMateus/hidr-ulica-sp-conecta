@@ -15,7 +15,7 @@ const VitrineSection = () => {
           <iframe 
             src="https://chicodg.egestor.com.br/vitrine/"
             className="w-full border-none"
-            style={{ height: '700px' }}
+            style={{ height: '850px' }}
             title="Vitrine de Produtos"
           />
         </div>
