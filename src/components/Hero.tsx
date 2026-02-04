@@ -70,11 +70,13 @@ export default function Hero() {
 
           {/* Right Column - Logo */}
           <div className="hidden lg:flex justify-center items-center animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            <img 
-              src="/logo.png" 
-              alt="Logo Hidráulica São Paulo" 
-              className="w-full max-w-md h-auto drop-shadow-2xl"
-            />
+            <div className="bg-white rounded-2xl p-8 shadow-2xl">
+              <img 
+                src="/logo.png" 
+                alt="Logo Hidráulica São Paulo" 
+                className="w-full max-w-sm h-auto"
+              />
+            </div>
           </div>
         </div>
       </div>
