@@ -70,22 +70,6 @@ export default function BrandsCarousel() {
         >
           <ChevronRight className="h-6 w-6 text-foreground" />
         </button>
-
-        {/* Dots Indicator */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-          {slides.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`w-3 h-3 rounded-full transition-colors ${
-                index === currentIndex 
-                  ? 'bg-primary' 
-                  : 'bg-card/60 hover:bg-card'
-              }`}
-              aria-label={`Ir para slide ${index + 1}`}
-            />
-          ))}
-        </div>
       </div>
     </section>
   );
