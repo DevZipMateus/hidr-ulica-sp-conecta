@@ -35,14 +35,14 @@ export default function LogosMarquee() {
   return (
     <section className="py-8 sm:py-10 md:py-12 bg-secondary overflow-hidden">
       <div className="container mx-auto px-4 mb-6 sm:mb-8">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-foreground font-heading">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-foreground font-heading animate-fade-in">
           Nossas Marcas Parceiras
         </h2>
       </div>
 
       {/* Left scrolling row */}
       <div className="relative mb-4 sm:mb-6 md:mb-8">
-        <div className="flex animate-scroll-left">
+        <div className="flex animate-scroll-left hover:[animation-play-state:paused]">
           {/* First set */}
           {leftLogos.map((logo, index) => (
             <div 
@@ -52,7 +52,7 @@ export default function LogosMarquee() {
               <img 
                 src={logo.src} 
                 alt={logo.alt} 
-                className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain bg-white p-2 sm:p-3 rounded-lg shadow-sm"
+                className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain bg-white p-2 sm:p-3 rounded-lg shadow-sm logo-hover grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
           ))}
@@ -65,7 +65,7 @@ export default function LogosMarquee() {
               <img 
                 src={logo.src} 
                 alt={logo.alt} 
-                className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain bg-white p-2 sm:p-3 rounded-lg shadow-sm"
+                className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain bg-white p-2 sm:p-3 rounded-lg shadow-sm logo-hover grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
           ))}
@@ -74,7 +74,7 @@ export default function LogosMarquee() {
 
       {/* Right scrolling row */}
       <div className="relative">
-        <div className="flex animate-scroll-right">
+        <div className="flex animate-scroll-right hover:[animation-play-state:paused]">
           {/* First set */}
           {rightLogos.map((logo, index) => (
             <div 
@@ -84,7 +84,7 @@ export default function LogosMarquee() {
               <img 
                 src={logo.src} 
                 alt={logo.alt} 
-                className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain bg-white p-2 sm:p-3 rounded-lg shadow-sm"
+                className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain bg-white p-2 sm:p-3 rounded-lg shadow-sm logo-hover grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
           ))}
@@ -97,7 +97,7 @@ export default function LogosMarquee() {
               <img 
                 src={logo.src} 
                 alt={logo.alt} 
-                className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain bg-white p-2 sm:p-3 rounded-lg shadow-sm"
+                className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain bg-white p-2 sm:p-3 rounded-lg shadow-sm logo-hover grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
           ))}
@@ -109,7 +109,7 @@ export default function LogosMarquee() {
               <img 
                 src={logo.src} 
                 alt={logo.alt} 
-                className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain bg-white p-2 sm:p-3 rounded-lg shadow-sm"
+                className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain bg-white p-2 sm:p-3 rounded-lg shadow-sm logo-hover grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
           ))}
@@ -121,7 +121,7 @@ export default function LogosMarquee() {
               <img 
                 src={logo.src} 
                 alt={logo.alt} 
-                className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain bg-white p-2 sm:p-3 rounded-lg shadow-sm"
+                className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain bg-white p-2 sm:p-3 rounded-lg shadow-sm logo-hover grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
           ))}
