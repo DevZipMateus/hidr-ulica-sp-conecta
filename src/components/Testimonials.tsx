@@ -1,4 +1,5 @@
 import { Star, Quote } from 'lucide-react';
+import testimonialsBg from '@/assets/backgrounds/testimonials-bg.jpg';
 
 const testimonials = [
   {
@@ -41,8 +42,15 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="depoimentos" className="py-20 lg:py-28">
-      <div className="container mx-auto">
+    <section id="depoimentos" className="py-20 lg:py-28 relative overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-15"
+        style={{ backgroundImage: `url(${testimonialsBg})` }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/90 to-background/95" />
+      
+      <div className="container mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">

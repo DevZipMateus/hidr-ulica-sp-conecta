@@ -1,5 +1,6 @@
 import { Wrench, Droplets, Bath, ShowerHead, CircleDot, Layers } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import productsBg from '@/assets/backgrounds/products-bg.jpg';
 
 const products = [
   {
@@ -42,8 +43,15 @@ const products = [
 
 export default function Products() {
   return (
-    <section id="produtos" className="py-20 lg:py-28 section-alt">
-      <div className="container mx-auto">
+    <section id="produtos" className="py-20 lg:py-28 relative overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-8"
+        style={{ backgroundImage: `url(${productsBg})` }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-br from-secondary via-secondary/98 to-secondary/95" />
+      
+      <div className="container mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">

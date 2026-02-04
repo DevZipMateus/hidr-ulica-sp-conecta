@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin, Clock, Instagram, Facebook, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import contactBg from '@/assets/backgrounds/contact-bg.jpg';
 
 const contactInfo = [
   {
@@ -47,8 +48,15 @@ const socialLinks = [
 
 export default function Contact() {
   return (
-    <section id="contato" className="py-20 lg:py-28 section-alt">
-      <div className="container mx-auto">
+    <section id="contato" className="py-20 lg:py-28 relative overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-8"
+        style={{ backgroundImage: `url(${contactBg})` }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-tr from-secondary via-secondary/98 to-secondary/95" />
+      
+      <div className="container mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">
