@@ -8,6 +8,9 @@ import garden from '@/assets/brands/garden.png';
 import apolo from '@/assets/brands/apolo.jpg';
 import censi from '@/assets/brands/censi.png';
 import docol from '@/assets/brands/docol.png';
+import krona from '@/assets/brands/krona.png';
+import deca from '@/assets/brands/deca.jpg';
+import pulvitec from '@/assets/brands/pulvitec.jpg';
 
 const leftLogos = [
   { src: lorenzetti, alt: 'Lorenzetti' },
@@ -23,6 +26,9 @@ const rightLogos = [
   { src: apolo, alt: 'Apolo Tubos e Equipamentos' },
   { src: censi, alt: 'Censi' },
   { src: docol, alt: 'Docol Metais Sanitários' },
+  { src: krona, alt: 'Krona Tubos e Conexões' },
+  { src: deca, alt: 'Deca' },
+  { src: pulvitec, alt: 'Pulvitec' },
 ];
 
 export default function LogosMarquee() {
