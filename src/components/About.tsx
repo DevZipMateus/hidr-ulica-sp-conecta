@@ -1,4 +1,5 @@
 import { Target, Eye, Heart, Building2, Truck, Users } from 'lucide-react';
+import aboutBg from '@/assets/backgrounds/about-bg.jpg';
 
 const values = [
   {
@@ -20,8 +21,15 @@ const values = [
 
 export default function About() {
   return (
-    <section id="sobre" className="py-20 lg:py-28">
-      <div className="container mx-auto">
+    <section id="sobre" className="py-20 lg:py-28 relative overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5"
+        style={{ backgroundImage: `url(${aboutBg})` }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
+      
+      <div className="container mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">
