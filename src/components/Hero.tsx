@@ -60,7 +60,7 @@ export default function Hero() {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
+              <Button asChild size="lg" variant="outline" className="border-primary-foreground bg-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/30 hover:text-primary-foreground font-semibold">
                 <a href="#produtos">
                   Nossos produtos
                 </a>
