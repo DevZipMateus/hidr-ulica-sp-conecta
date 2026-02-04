@@ -39,7 +39,7 @@ export default function Header() {
           e.preventDefault();
           handleNavClick('#inicio');
         }}>
-            <img src="/logo.png" alt="Logo Hidráulica São Paulo - Materiais Hidráulicos" className="h-20 w-auto" />
+            <img src="/logo-icon.png" alt="Logo Hidráulica São Paulo - Materiais Hidráulicos" className="h-12 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
