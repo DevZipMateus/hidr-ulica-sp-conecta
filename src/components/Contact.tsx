@@ -48,7 +48,7 @@ const socialLinks = [
 
 export default function Contact() {
   return (
-    <section id="contato" className="py-20 lg:py-28 relative overflow-hidden">
+    <section id="contato" className="py-12 sm:py-16 md:py-20 lg:py-28 relative overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-8"
@@ -56,71 +56,71 @@ export default function Contact() {
       />
       <div className="absolute inset-0 bg-gradient-to-tr from-secondary via-secondary/98 to-secondary/95" />
       
-      <div className="container mx-auto relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-3">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <span className="inline-block text-xs sm:text-sm font-semibold text-accent uppercase tracking-wider mb-2 sm:mb-3">
             Contato
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 font-heading">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 sm:mb-4 font-heading">
             Fale conosco
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
             Entre em contato para solicitar orçamentos ou tirar suas dúvidas.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12">
           {/* Contact Info */}
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             {contactInfo.map((info, index) => (
               <div 
                 key={info.title} 
-                className="flex items-start gap-4 animate-slide-in-left"
+                className="flex items-start gap-3 sm:gap-4 animate-slide-in-left"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
-                  <info.icon className="h-6 w-6 text-primary" />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
+                  <info.icon className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
                 </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">{info.title}</h3>
+                <div className="min-w-0">
+                  <h3 className="text-sm sm:text-base font-semibold text-foreground mb-0.5 sm:mb-1">{info.title}</h3>
                   {info.href ? (
                     <a 
                       href={info.href} 
                       target={info.href.startsWith('http') ? '_blank' : undefined}
                       rel={info.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                      className="text-muted-foreground hover:text-primary transition-colors"
+                      className="text-xs sm:text-sm text-muted-foreground hover:text-primary transition-colors break-words"
                     >
                       {info.value}
                     </a>
                   ) : (
-                    <p className="text-muted-foreground">{info.value}</p>
+                    <p className="text-xs sm:text-sm text-muted-foreground">{info.value}</p>
                   )}
                 </div>
               </div>
             ))}
 
             {/* Social Links */}
-            <div className="pt-6 border-t border-border">
-              <h3 className="font-semibold text-foreground mb-4">Siga-nos nas redes sociais</h3>
-              <div className="flex gap-3">
+            <div className="pt-4 sm:pt-6 border-t border-border">
+              <h3 className="text-sm sm:text-base font-semibold text-foreground mb-3 sm:mb-4">Siga-nos nas redes sociais</h3>
+              <div className="flex gap-2 sm:gap-3">
                 {socialLinks.map((social) => (
                   <a
                     key={social.label}
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+                    className="w-9 h-9 sm:w-10 sm:h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
                     aria-label={social.label}
                   >
-                    <social.icon className="h-5 w-5" />
+                    <social.icon className="h-4 w-4 sm:h-5 sm:w-5" />
                   </a>
                 ))}
               </div>
             </div>
 
             {/* CTA */}
-            <div className="pt-6">
+            <div className="pt-4 sm:pt-6">
               <Button asChild size="lg" className="w-full sm:w-auto">
                 <a href="https://wa.me/551143241179" target="_blank" rel="noopener noreferrer">
                   Falar no WhatsApp
@@ -131,7 +131,7 @@ export default function Contact() {
 
           {/* Map */}
           <div className="animate-slide-in-right">
-            <div className="bg-card rounded-xl overflow-hidden card-shadow h-[400px]">
+            <div className="bg-card rounded-xl overflow-hidden card-shadow h-[280px] sm:h-[320px] md:h-[400px]">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1234567890123!2d-46.6234567!3d-23.4934567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8a0a0a0a0a0%3A0x0!2sRua%20Guarapu%C3%A3%2C%20315%20-%20Jardim%20Fran%C3%A7a%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
                 width="100%"
@@ -143,7 +143,7 @@ export default function Contact() {
                 title="Localização Hidráulica São Paulo"
               />
             </div>
-            <p className="text-sm text-muted-foreground mt-3 text-center">
+            <p className="text-xs sm:text-sm text-muted-foreground mt-2 sm:mt-3 text-center">
               <a 
                 href="https://maps.app.goo.gl/UvGN3ALpM1JaRHGn6" 
                 target="_blank" 
